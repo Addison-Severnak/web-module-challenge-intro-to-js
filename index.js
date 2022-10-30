@@ -220,10 +220,10 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return kilometers * 0.62137;
+  return kilometers * 0.621;
 }
 
-console.log(miles(5));
+console.log(miles(2));
 
 //Task 5b - Centimeters to Feet
 /*
@@ -234,10 +234,10 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  return cm * 0.0328;
+  return cm / 30.48;
 }
 
-console.log(feet(170));
+console.log(feet(160));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
