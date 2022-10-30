@@ -219,11 +219,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(kilometers){
-  return kilometers * 0.621;
+function miles(km){
+  return km * 0.621371;
 }
 
-console.log(miles(2));
+console.log(miles(10));
 
 //Task 5b - Centimeters to Feet
 /*
@@ -253,10 +253,16 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      for(let i = number; i > 0; i--){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i -1} bottles of soda on the wall`;
+      }
 }
 
+console.log(annoyingSong(8));
+console.log(annoyingSong(7));
+console.log(annoyingSong(6));
+console.log(annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -273,11 +279,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+  if(score <= 100 && score >= 90){
+    return `you got an A`;
+  }else if(score <= 89 && score >= 80){
+    return `you got a B`;
+  }else if(score <= 79 && score >= 70){
+    return `you got a C`;
+  }else if(score <=69 && score >= 60){
+    return `you got a D`;
+  }else{
+    return `you got an F`
+  }
 }
 
-
+console.log(grade(90));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
